@@ -37,7 +37,7 @@ Requisitos da aplicação:
 
 ## Código
 
-\```c++:tarefas/tarefas.ino
+\```c:./tarefas/tarefas.ino
 
 \```
 
