@@ -118,7 +118,7 @@ void tarefa_4(){
 const unsigned long periodo_tarefa_5 = 2000;
 unsigned long tempo_tarefa_5 = millis();
 
-/* Tarefa 5: pisca o LED a cada 1 segundo */
+/* Tarefa 5: envia o valor analógico para o PC */
 void tarefa_5(unsigned long tempo_atual){
 
    /* Hora de piscar o led caso tenha passado 1000 ms */
