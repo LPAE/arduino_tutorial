@@ -1,7 +1,7 @@
 /*
  * tarefas.ino
  *
- *  Criaddo em: 27 de julho d 2021
+ *  Criado em: 27 de julho d 2021
  *      Renan Augusto Starke
  *      Instituto Federal de Santa Catarina
  *
@@ -10,7 +10,7 @@
  *        - Ler um valor entre 0 a 255 do usuário pela porta Serial (USB) e escrever o valor no LED 2.
  *        - Ligar o LED 3 se o botão é pressionado.
  *        - Ligar o LED 4 se o valor analógico do potenciômetro for maior que 312.
- *        - Enviar o valor do potenciômetro a cada 2 segundos.  
+ *        - Enviar o valor do potenciômetro a cada 2 segundos.
  *
  *                  Arduino Uno
  *               -----------------
@@ -18,7 +18,7 @@
  *            | |                 |
  *            --| RST             |-
  *              |                 |        -+
- *  LED1  <---  | D9              |- <- Rx  -  Cabo USB 
+ *  LED1  <---  | D9              |- <- Rx  -  Cabo USB
  *  LED2  <---  | D10             |- -> Tx  -
  *  LED3  <---  | D11             |        -+
  *  LED4  <---  | D12          D5 |- <- Botão
@@ -33,7 +33,7 @@
 #define BOTAO 5
 
 
-/* Função SETUP é executa apenas uma vez 
+/* Função SETUP é executa apenas uma vez
  * ela é responsável pela configuração dos
  * pinos do Arduino */
 void setup() {
@@ -41,7 +41,7 @@ void setup() {
   /* Comunicação serial com o computador */
   Serial.begin(9600);
   while (!Serial);
-  
+
   /* Configuração dos pinos como entrada ou saída */
   pinMode(LED_1, OUTPUT);
   pinMode(LED_2, OUTPUT);
@@ -59,17 +59,17 @@ int estado_LED1 = LOW;
 
 /* Tarefa 1: pisca o LED a cada 1 segundo */
 void tarefa_1(unsigned long tempo_atual){
-  
+
   /* Hora de piscar o led caso tenha passado 1000 ms */
   if(tempo_atual - tempo_tarefa_1 > periodo_tarefa_1) {
-    
+
     tempo_tarefa_1 = tempo_atual;
-    
+
     if (estado_LED1 == HIGH)
       estado_LED1 = LOW;
     else
       estado_LED1 = HIGH;
-    
+
     digitalWrite(LED_1, estado_LED1);
   }
 }
@@ -80,7 +80,7 @@ void tarefa_2(){
   /* Caso tenha recebido algum dado do PC */
   if (Serial.available()) {
     int dados_recebidos = Serial.parseInt();
-    
+
     if (dados_recebidos >= 0 && dados_recebidos < 256) {
       analogWrite(LED_2, dados_recebidos);
     }
@@ -105,7 +105,7 @@ void tarefa_4(){
 
   valor_analogico = analogRead(POT);
 
-  if (valor_analogico > 512) 
+  if (valor_analogico > 512)
     digitalWrite(LED_4, HIGH);
   else {
     digitalWrite(LED_4, LOW);
@@ -121,14 +121,14 @@ unsigned long tempo_tarefa_5 = millis();
 /* Tarefa 5: envia o valor analógico para o PC */
 void tarefa_5(unsigned long tempo_atual){
 
-   /* Hora de piscar o led caso tenha passado 1000 ms */
+  /* Hora de enviar os dados analógicos caso tenha passado 2000 ms */
   if(tempo_atual - tempo_tarefa_5 > periodo_tarefa_5) {
     tempo_tarefa_5 = tempo_atual;
-    
+
     Serial.print("Valor : ");
     Serial.println(valor_analogico);
   }
-}  
+}
 
 /* Função loop() é responsável por escalonar as tarefas.
  * Essa função é executada eternamete enquanto o Arduino estiver
@@ -136,7 +136,7 @@ void tarefa_5(unsigned long tempo_atual){
 void loop() {
 
   unsigned long meu_tempo_atual = millis();
- 
+
   tarefa_1(meu_tempo_atual);
 
   tarefa_2();
@@ -145,5 +145,5 @@ void loop() {
 
   tarefa_4();
 
-  tarefa_5(meu_tempo_atual); 
+  tarefa_5(meu_tempo_atual);
 }

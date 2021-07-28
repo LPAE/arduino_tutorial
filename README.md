@@ -41,7 +41,7 @@ Requisitos da aplicação:
 /*
  * tarefas.ino
  *
- *  Criaddo em: 27 de julho d 2021
+ *  Criado em: 27 de julho d 2021
  *      Renan Augusto Starke
  *      Instituto Federal de Santa Catarina
  *
@@ -161,7 +161,7 @@ unsigned long tempo_tarefa_5 = millis();
 /* Tarefa 5: envia o valor analógico para o PC */
 void tarefa_5(unsigned long tempo_atual){
 
-   /* Hora de piscar o led caso tenha passado 1000 ms */
+  /* Hora de enviar os dados analógicos caso tenha passado 2000 ms */
   if(tempo_atual - tempo_tarefa_5 > periodo_tarefa_5) {
     tempo_tarefa_5 = tempo_atual;
 
@@ -171,8 +171,8 @@ void tarefa_5(unsigned long tempo_atual){
 }  
 
 /* Função loop() é responsável por escalonar as tarefas.
- * Essa função é executada eternamete enquanto o Arduino estiver
- * energizado */
+ * Essa função é executada eternamente (enquanto o Arduino estiver
+ * energizado) */
 void loop() {
 
   unsigned long meu_tempo_atual = millis();
