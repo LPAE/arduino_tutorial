@@ -1,5 +1,8 @@
 # Dicas para projetos no Arduino
 
+- [Exemplo multitarefas](./tarefas/tarefas.ino) 
+- [Exemplo buzzer](./buzzer/buzzer.ino) 
+
 O Arduino Uno não é um microcontrolador muito poderoso e isso está relacionado diretamente ao poder de computacional global. Contudo, a velocidade de execução ainda é bastante alta para lidar com a maioria dos sistemas físicos que se deseja controlar.
 
 Lembre-se que o microcontrolador ATmega328p que equipa as placas do Arduino Uno utiliza um clock de 16MHz.
