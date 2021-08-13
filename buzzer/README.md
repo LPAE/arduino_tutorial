@@ -4,7 +4,7 @@ Um buzzer pode-se utilizado em projetos eletrônicos para geração de alarmes o
 
 ![Esquemático buzzer passivo](./buzzer.png)
 
-Use a função tone tone(pino, frequência) ou tone(pino, frequência, duração) para alterar a frequência sonora.
+Use a função tone(pino, frequência) ou tone(pino, frequência, duração) para alterar a frequência sonora.
 
 Veja [esse exemplo](./buzzer.ino) para gerar um alarme com frequência de 2kHz a cada 1s controlado pela serial.
 
