@@ -8,7 +8,7 @@ Use a função tone(pino, frequência) ou tone(pino, frequência, duração) par
 
 Veja [esse exemplo](./buzzer.ino) para gerar um alarme com frequência de 2kHz a cada 1s controlado pela serial.
 
-Observe abaixo que o pino de acionamento é mantido em nível alto após a oscilação em 2KhZ.
+Observe abaixo que o pino de acionamento é mantido em nível alto após a oscilação em 2kHz.
 
 ![Forma de onda gerado pelo código buzzer.ino](./wave.png)
 
