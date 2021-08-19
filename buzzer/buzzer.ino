@@ -103,7 +103,7 @@ void tarefa_2() {
 
     /* Depuração */
     Serial.print("Recebido:");
-    Serial.println("a");
+    Serial.println(dado_recebido);
 
     if (dado_recebido == 'a')
       if (ligar_alarme == true)
