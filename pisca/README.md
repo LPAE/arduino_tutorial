@@ -1,6 +1,7 @@
-# Buzzer
+# LED
 
-Um buzzer pode-se utilizado em projetos eletrônicos para geração de alarmes ou informações sonoras. Caso o buzzer passivo tenha acionamento PNP, deve-se manter o pino em nível alto (HIGH) para desligar.
+Para entender o funcionamento do arduíno podemos começar com um simples pisca LED, veremos funções básicas como PinMode e DigitalWrite, a função do PinMode vai ditar o comportamento do pino, se ele vai ser saída ou entrada. Já o digitalWrite vai dizer aos LEDs se eles vão adotar o sinal de High ou o Low (alto e baixo), ou seja, ligado e desligado.
+
 
 ![Esquemático buzzer passivo](./buzzer.png)
 
