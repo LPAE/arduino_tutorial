@@ -26,3 +26,8 @@ void loop() // Função loop é para executar repetidamente o código
   }
 }
 ```
+## Referências
+
+- [Datasheet do sensor](https://siccciber.com.br/wp-content/uploads/2020/06/FTC-PIR.pdf)
+
+
