@@ -4,7 +4,7 @@ Para usar o sensor de presença PIR, usaremos o digitalRead que vai receber um v
 
 ## Montagem do circuito
 
-![Circuito PIR](./SensorPIR.png)
+![Circuito PIR](./PIR.png)
 
 ## Código
 
