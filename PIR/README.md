@@ -3,7 +3,8 @@
 Para usar o sensor de presença PIR, usaremos o digitalRead que vai receber um valor High ou Low, tendo conexão com uma porta digital, assim que essa porta digital perceber algum movimento vai informar para o arduino exibindo no monitor serial, dando um sinal de HIGH. Caso não detecte nada, enviará um sinal de LOW.
 
 ## Montagem do circuito
-![Circuito PIR](./LED.png)
+
+![Circuito PIR](./Sensor PIR.png)
 
 ## Código
 
