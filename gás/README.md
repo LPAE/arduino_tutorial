@@ -38,4 +38,4 @@ void loop() // Função loop é para executar repetidamente o código
 ```
 ## Referências
 
-- [Sensor de Gás] https://www.masterwalkershop.com.br/sensor-detector-de-gas-inflamavel-fumaca-mq-2)
+- [Sensor de Gás](https://www.masterwalkershop.com.br/sensor-detector-de-gas-inflamavel-fumaca-mq-2)
