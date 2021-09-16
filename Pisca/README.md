@@ -6,6 +6,7 @@ Para entender o funcionamento do arduino podemos começar com um simples pisca L
 
 Para utilizar o LED no arduino utilizaremos resistores para que a tensão e corrente sejam reguladas e os componentes não sofram danos. O resistor utilizado nesse exemplo é de 330 ohms, podendo ser admitidos outros valores e LEDs diferentes.
 
+< img src = "LED.png" alt = "Circuito LED" width = 500 />          
 ![Circuito LED](./LED.png)
 
 ## Código
