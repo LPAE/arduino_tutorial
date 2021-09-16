@@ -4,5 +4,5 @@
 - Para usar buzzers: [Exemplo buzzer](./buzzer/) 
 - Para usar LED: [Exemplo LED](./pisca/)  
 - Para usar sensor de presença: [Exemplo sensor de presença](./PIR/)               
-- Para usar sensor de gás e fumaça: [Exemplo sensor de gás](./Gas/)
+- Para usar sensor de gás e fumaça: [Exemplo sensor de gás](./gás/)
 
