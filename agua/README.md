@@ -2,6 +2,7 @@
 
 ## Montagem do Circuito
 
+<img src = "agua.png" alt = "Circuito água" width = "500" />
 ## Código
 
 ```C
