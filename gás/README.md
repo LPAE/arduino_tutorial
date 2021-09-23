@@ -1,6 +1,7 @@
 # Sensor de Gás e Fumaça
 
-No sensor MQ-2 vamos utilizar a função analogRead que vai informar variáveis de valores inteiros que serão repassadas para o Monitor Serial do Arduino caso haja alterações, que no nosso caso é a concentração do gás.
+No sensor MQ-2 vamos utilizar a função analogRead que vai informar variáveis de valores inteiros que serão repassadas para o Monitor Serial. Assim que o sensor detectar a presença de um gás inflamável ou fumaça, a entrada digital vai ficar com o valor zero e os valores da entrada analógica começam a subir. 
+
 
 ## Montagem do Circuito
 
@@ -36,6 +37,19 @@ void loop() // Função loop é para executar repetidamente o código
     delay(1000); // Aguarda 1000 millisegundo
 }
 ```
+
+## Resultados
+
+Leitura entrada digital: 1
+Leitura entrada analógica: 24
+
+Leitura entrada digital: 0
+Leitura entrada analógica: 766
+
+Leitura entrada digital: 0
+Leitura entrada analógica: 918
+
+
 ## Referências
 
 - [Sensor de Gás](https://www.masterwalkershop.com.br/sensor-detector-de-gas-inflamavel-fumaca-mq-2)
