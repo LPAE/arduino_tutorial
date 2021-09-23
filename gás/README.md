@@ -29,10 +29,10 @@ void loop() // Função loop é para executar repetidamente o código
   aSensor = analogRead(entradaAnalogica); // Define que a entrada analógica será "aSensor"
   
   Serial.print("Leitura entrada digital: "); // Lê a entrada digital
-    Serial.println(dSensor); // Exibe no monitor 
+  Serial.println(dSensor); // Exibe no monitor 
   Serial.print("Leitura entrada analógica: "); // Lê a entrada analógica
-    Serial.println(aSensor); // Exibe no monitor
-    Serial.println();
+  Serial.println(aSensor); // Exibe no monitor
+  Serial.println();
 
     delay(1000); // Aguarda 1000 millisegundo
 }
