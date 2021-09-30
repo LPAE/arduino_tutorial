@@ -1,9 +1,10 @@
 # Buzzer
 
 ## Montagem do Circuito 
-<img src = ".png" alt = "Circuito buzzer" width = "500" />
+<img src = "buzzer.png" alt = "Circuito buzzer" width = "500" />
 
 ## Código
+```C
 int buzzerPin = 3;
 const int frequencia = 659;
 const unsigned long periodo_tarefa_1 = 1000;
@@ -25,3 +26,4 @@ void tarefa_1(unsigned long tempo_atual){
   noTone(buzzerPin);
   digitalWrite(buzzerPin, HIGH);
 }
+```
