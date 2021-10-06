@@ -20,7 +20,7 @@ void setup() // Função setup é executada apenas uma vez
 void loop() // Função loop é para executar repetidamente o código
 {
   if (digitalRead(pinPIR)== HIGH){  // Se houver movimento
-    Serial.println("Presença detectada"); // Enviar para monitor serial
+  Serial.println("Presença detectada"); // Enviar para monitor serial
 } else { 
   Serial.println("-----"); // Se não houver movimento enviar para monitor serial
 }
