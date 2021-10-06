@@ -23,7 +23,7 @@ void loop() // Função loop é para executar repetidamente o código
     Serial.println("Presença detectada"); // Enviar para monitor serial
 } else { 
   Serial.println("-----"); // Se não houver movimento enviar para monitor serial
-  }
+}
 }
 ```
 ## Referências
