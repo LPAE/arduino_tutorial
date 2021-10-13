@@ -24,7 +24,7 @@ Considere o seguinte hardware:
 - 1 potenciômetro conectado a uma entrada anaĺógica.
 - Cabo USB conectado no computador.
 
-<img src = "ttps://roboticsbackend.com/wp-content/uploads/2019/01/arduino_schematics_leds_button_potentiometer.jpg" alt = "Circuito LED" width = 400 />
+<img src = "https://roboticsbackend.com/wp-content/uploads/2019/01/arduino_schematics_leds_button_potentiometer.jpg" alt = "Circuito LED" width = 400 />
 
 Requisitos da aplicação:
 
