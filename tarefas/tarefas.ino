@@ -51,14 +51,15 @@ void setup() {
 }
 
 /* Essas variáveis são globais pois é necessário
- * manter os valores indenpendente do contexto de
+ * manter os valores independente do contexto de
  * execução da função tarefa_1 */
 const unsigned long periodo_tarefa_1 = 1000;
 unsigned long tempo_tarefa_1 = millis();
 int estado_LED1 = LOW;
 
 /* Tarefa 1: pisca o LED a cada 1 segundo */
-void tarefa_1(unsigned long tempo_atual){
+void tarefa_1(){
+  unsigned long tempo_atual = millis();
 
   /* Hora de piscar o led caso tenha passado 1000 ms */
   if(tempo_atual - tempo_tarefa_1 > periodo_tarefa_1) {
@@ -113,13 +114,14 @@ void tarefa_4(){
 }
 
 /* Essas variáveis são globais pois é necessário
- * manter os valores indenpendente do contexto de
+ * manter os valores independente do contexto de
  * execução da função tarefa_5 */
 const unsigned long periodo_tarefa_5 = 2000;
 unsigned long tempo_tarefa_5 = millis();
 
 /* Tarefa 5: envia o valor analógico para o PC */
-void tarefa_5(unsigned long tempo_atual){
+void tarefa_5(){
+  unsigned long tempo_atual = millis();
 
   /* Hora de enviar os dados analógicos caso tenha passado 2000 ms */
   if(tempo_atual - tempo_tarefa_5 > periodo_tarefa_5) {
@@ -135,9 +137,7 @@ void tarefa_5(unsigned long tempo_atual){
  * energizado */
 void loop() {
 
-  unsigned long meu_tempo_atual = millis();
-
-  tarefa_1(meu_tempo_atual);
+  tarefa_1();
 
   tarefa_2();
 
@@ -145,5 +145,5 @@ void loop() {
 
   tarefa_4();
 
-  tarefa_5(meu_tempo_atual);
+  tarefa_5();
 }
