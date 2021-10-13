@@ -38,7 +38,7 @@ Requisitos da aplicação:
 
 - [Código completo](tarefas.ino).
 
-Um exemplo de código de uma tarefa pode ser visualizado abaixo. Perceba que o Arduino executa as tarefas na função loop em uma frequência muito alta. Dessa forma, a _tarefa_5_ é chamada milhares de vezes dentro do período definido em _periodo_tarefa_5_. Para que seja possível esperar 2s, é necessário verificar se já passou o tempo (período) desde a última execução da tarefa (isso é realizado no if()). Se essa condição for verdadeira, é necessário executar o código (envio dos dados pela serial). Caso contrário liberamos o processador do Arduino para executar outras tarefas (ao contrário do que a função delay() faz).
+Um exemplo de código de uma tarefa pode ser visualizado abaixo. Perceba que o Arduino executa as tarefas na função _loop_ em uma frequência muito alta. Dessa forma, a _tarefa_5_ é chamada milhares de vezes dentro do período definido em _periodo_tarefa_5_. Para que seja possível esperar 2s, é necessário verificar se já passou o tempo (período) desde a última execução da tarefa (isso é realizado no if()). Se essa condição for verdadeira, é necessário executar o código (envio dos dados pela serial). Caso contrário, libera-se o processador do Arduino para executar outras tarefas (ao contrário do que a função delay() faria deixando o processador travado sem trabalho útil).
 
 <img src = "tarefas.svg" alt = "Circuito LED" width = 400 />
 
