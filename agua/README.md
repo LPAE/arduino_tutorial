@@ -1,4 +1,5 @@
 # Sensor de Água
+O sensor de água através de suas dez trilhas no módulo vai captar se existe a presença de água. E se detectar a leitura da entrada analógica repassara esses dados fazendo assim com que acione o LED.
 
 ## Montagem do Circuito
 
@@ -38,3 +39,4 @@ else {
 Serial.println(valorSensor);
 }
 ```
+
