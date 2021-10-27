@@ -53,8 +53,11 @@ void loop() {
 ## Resultados
 
 Humidity: 71.00%  Temperature: 28.70°C 83.66°F  Heat index: 32.25°C 90.06°F
+
 Humidity: 71.00%  Temperature: 28.60°C 83.48°F  Heat index: 32.04°C 89.67°F
+
 Humidity: 72.00%  Temperature: 28.50°C 83.30°F  Heat index: 31.99°C 89.58°F
+
 Humidity: 72.00%  Temperature: 28.50°C 83.30°F  Heat index: 31.99°C 89.58°F
 Humidity: 72.00%  Temperature: 28.40°C 83.12°F  Heat index: 31.77°C 89.19°F
 Humidity: 72.00%  Temperature: 28.30°C 82.94°F  Heat index: 31.56°C 88.81°F
