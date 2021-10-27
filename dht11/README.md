@@ -2,7 +2,7 @@
 
 ## Montagem do Circuito
 
-<img src= ".png" alt = "Circuito umidade" width = "500" />
+<img src= "temp.png" alt = "Circuito temperatura" width = "500" />
 
 ## Código
 ```C
