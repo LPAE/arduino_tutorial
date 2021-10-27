@@ -25,7 +25,7 @@ void setup()
   // Configura a entrada digital como entrada
   pinMode (ENTRADA_DIGITAL, INPUT);
   // Inicia a comunicação serial a 9600 bits por segundo
-  Serial.begin(2400);
+  Serial.begin(9600);
 }
 
 // Função loop é para executar repetidamente o código
@@ -37,7 +37,7 @@ void loop()
 /* Essas variáveis são globais pois é necessário
    manter os valores independente do contexto de
    execução da função tarefa_1 */
-const unsigned long periodo_tarefa_1 = 2000;
+const unsigned long periodo_tarefa_1 = 1000;
 unsigned long tempo_tarefa_1 = millis();
 
 //Envia os valores interios para o PC
