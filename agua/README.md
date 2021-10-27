@@ -7,28 +7,34 @@
 ## Código
 
 ```C
-#define entradaAnalogica 0  
+#define entradaAnalogica 0
 
 int valorSensor   = 0;
-int led   = 13 ; 
+int led   = 13 ;
 
 
 void setup() {
-Serial.begin(9600);
-pinMode (led, OUTPUT);    
- 
+  Serial.begin(9600);
+  pinMode (led, OUTPUT);
+
 }
 
-void loop {
+void loop()
+
+const unsigned long periodo_tarefa_1 = 1000;
+unsigned long tempo_tarefa_1 = 0;
 int valorSensor = analogRead (entradaAnalogica);
-  
-if
 {
-digitalWrite(led, HIGH)
-  }
+  tarefa_1();
+}
+valorSensor = analogRead(POT);
+if (valorSensor > 300)
+{
+  digitalWrite(led, HIGH);
+}
 else {
-digitalWrite(led, LOW) 
-  }
-delay(100);
+  digitalWrite(led, LOW);
+}
+Serial.println(valorSensor);
 }
 ```
