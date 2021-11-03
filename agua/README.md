@@ -1,5 +1,5 @@
 # Sensor de Água
-O sensor de água detecta a presença de água devido as suas trilhas presentes na sua superfície. No nosso teste escolhemos acender o LED de acordo com o valor que vamos determinar para a nossa entrada analógica
+O sensor de água detecta a presença de água devido as suas trilhas presentes na sua superfície. Adotamos uma predeterminação que, assumindo um valor de umidade maior que 300, o LED irá se acender, assim, indicando a presença de água. 
 
 ## Montagem do Circuito
 
