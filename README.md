@@ -5,3 +5,5 @@
 - [Para usar buzzers](./buzzer/)
 - [Para usar sensor de presença](./PIR/)               
 - [Para usar sensor de gás e fumaça](./gas/)
+- [Para usar sensor de água](./agua/)
+- [Para usar sensor de umidade e temperatura](dht11)
