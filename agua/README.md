@@ -1,5 +1,6 @@
 # Sensor de Água
-O sensor de água detecta a presença de água devido as suas trilhas presentes na sua superfície. Adotamos uma predeterminação que, assumindo um valor de umidade maior que 300, o LED irá se acender, assim, indicando a presença de água. 
+
+Esse sensor detecta a presença ou nível de água de forma analógica pela alteração da resistência das trilhas paralelas presentes na superfície da placa de circuito impresso. Conforme o exemplo, assumi-se um valor de analógico lido do sensor maior que 300, o LED irá se acender, assim, indicando a presença de água. O valor da atuação e calibração deve ser ajustado para cada aplicação.
 
 ## Montagem do Circuito
 
@@ -8,9 +9,9 @@ O sensor de água detecta a presença de água devido as suas trilhas presentes 
 ## Código
 
 ```C
-// Define a entrada analogica com o valor "0"
+// Define a entrada analógica 0 conectada ao sensor
 #define PINO_SENSOR_AGUA A0
-// Define o LED com o valor "13" que é onde o pino está conectado
+// Define o pino "13" onde o LED está conectado
 #define LED 13
 
 // Função setup é executada apenas uma vez
@@ -23,7 +24,7 @@ void setup() {
 }
 
 /* Essas variáveis são globais pois é necessário
-   manter os valores indenpendente do contexto de
+   manter os valores independente do contexto de
    execução da função tarefa_1 */
 const unsigned long periodo_tarefa_1 = 1000;
 unsigned long tempo_tarefa_1 = millis();
@@ -53,12 +54,10 @@ void tarefa_1() {
 }
 
 /* Função loop() é responsável por escalonar as tarefas.
-   Essa função é executada eternamete enquanto o Arduino estiver
-   energizado */
+   Essa função é executada eternamente enquanto o Arduino estiver  energizado */
 void loop() {
 
   tarefa_1();
 
 }
 ```
-

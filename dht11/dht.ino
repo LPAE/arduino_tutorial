@@ -1,8 +1,8 @@
 //Inclui a biblioteca
 #include <DHT.h>
 
-//Pino analógico onde está conectado o sensor
-#define DHT11PIN A1
+//Pino digital onde está conectado o sensor
+#define DHT11PIN 2
 //Modelo do DHT
 #define DHTTYPE  DHT11
 
@@ -12,8 +12,11 @@ DHT dht(DHT11PIN, DHTTYPE);
 void setup() {
   // inicia a comunicação serial a 9600 bits por segundo
   Serial.begin(9600);
-  Serial.println(F("DHTxx test!"));
-  
+  // imprime uma mensagem inical
+  // funcação F é uma indicação para manter a mensagem
+  // na memória flash para economizar memória.
+  Serial.println(F("Teste do DHT!"));
+  // inicializa classe do sensor
   dht.begin();
 }
 

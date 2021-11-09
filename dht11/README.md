@@ -1,5 +1,13 @@
 # Sensor de Umidade e Temperatura
-Para utilizar o sensor de temperatura e umidade precisamos de uma biblioteca específica, isso é necessário por conta da sua complexidade enquanto um sensor capaz de determinar a temperatura e a porcentagem de umidade no ambiente.
+
+O DHT11 é um sensor digital de temperatura e umidade que utiliza um barramento de comunicação serial simples de apenas um fio. É necessáio utilizar um resistor de _pull-up_ no pino de dados (ou utilizar pull-up interno do Arduino).
+
+No caso do Arduino, utiliza-se duas bibliotecas específicas que simplificam a comunicação do sensor:
+
+- Adafruit Unified Sensor
+- DHT sensor library
+
+<img src= "libs.png" alt = "Circuito temperatura" width = "500" />
 
 ## Montagem do Circuito
 
@@ -10,8 +18,8 @@ Para utilizar o sensor de temperatura e umidade precisamos de uma biblioteca esp
 //Inclui a biblioteca
 #include <DHT.h>
 
-//Pino analógico onde está conectado o sensor
-#define DHT11PIN A1
+//Pino digital onde está conectado o sensor
+#define DHT11PIN 2
 //Modelo do DHT
 #define DHTTYPE  DHT11
 
@@ -21,9 +29,11 @@ DHT dht(DHT11PIN, DHTTYPE);
 void setup() {
   // inicia a comunicação serial a 9600 bits por segundo
   Serial.begin(9600);
-  //??
-  Serial.println(F("DHTxx test!"));
-  //??
+  // imprime uma mensagem inical
+  // funcação F é uma indicação para manter a mensagem
+  // na memória flash para economizar memória.
+  Serial.println(F("Teste do DHT!"));
+  // inicializa classe do sensor
   dht.begin();
 }
 
@@ -89,5 +99,3 @@ Umidade: 87.00%  Temperatura: 29.90°C 85.82°F
 Umidade: 86.00%  Temperatura: 30.10°C 86.18°F
 
 Umidade: 86.00%  Temperatura: 30.00°C 86.00°F
-
-
