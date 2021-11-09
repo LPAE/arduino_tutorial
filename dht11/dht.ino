@@ -55,5 +55,6 @@ void tarefa_1() {
     Serial.print(t);
     Serial.print(F("°C "));
     Serial.print(f);
+    Serial.println(F("°F"));
   }
 }
