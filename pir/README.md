@@ -34,6 +34,10 @@ void loop()
   }
 }
 ```
+
+## Vídeo do funcionamento 
+- [Sensor de presença PIR](https://youtu.be/BA93fHSoEoE)
+
 ## Referências
 
 - [Datasheet do sensor](https://siccciber.com.br/wp-content/uploads/2020/06/FTC-PIR.pdf)
