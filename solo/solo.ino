@@ -1,5 +1,5 @@
-// Define a entrada digital com o valor "52"
-#define ENTRADA_DIGITAL 52
+// Define a entrada digital com o valor "53"
+#define ENTRADA_DIGITAL 53
 // Define a entrada analogica com o valor "1"
 #define ENTRADA_ANALOGICA A1
 
