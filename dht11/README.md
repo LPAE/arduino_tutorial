@@ -11,7 +11,7 @@ No caso do Arduino, utiliza-se duas bibliotecas específicas que simplificam a c
 
 ## Montagem do Circuito
 
-<img src= "temp.png" alt = "Circuito temperatura" width = "500" />
+<img src= "dht.png" alt = "Circuito temperatura" width = "500" />
 
 ## Código
 ```C
