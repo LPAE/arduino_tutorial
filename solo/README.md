@@ -5,6 +5,7 @@
 <img src="solo.png" alt="Circuito solo" width="500"/>
 
 ## Código
+```C
 // Define a entrada digital com o valor "53"
 #define ENTRADA_DIGITAL 53
 // Define a entrada analogica com o valor "1"
@@ -56,6 +57,7 @@ void tarefa_1() {
 
   }
 }
+```
 
 ## Resultados 
 Leitura entrada digital: 1
