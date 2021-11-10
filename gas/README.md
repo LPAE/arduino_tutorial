@@ -75,7 +75,7 @@ Leitura entrada analógica: 918
 
 ## Vídeo do funcionamento 
 - [Sensor de gás e fumaça](https://youtu.be/tYmWpk2kVjs)
-- 
+
 ## Referências
 
 - [Sensor de Gás](https://www.masterwalkershop.com.br/sensor-detector-de-gas-inflamavel-fumaca-mq-2)
