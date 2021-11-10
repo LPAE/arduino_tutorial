@@ -99,3 +99,6 @@ Umidade: 87.00%  Temperatura: 29.90°C 85.82°F
 Umidade: 86.00%  Temperatura: 30.10°C 86.18°F
 
 Umidade: 86.00%  Temperatura: 30.00°C 86.00°F
+
+## Vídeo do funcionamento 
+- [Sensor de umidade e temperatura](https://youtu.be/C211qThi6kg)
