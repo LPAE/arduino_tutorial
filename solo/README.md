@@ -32,3 +32,22 @@ void loop() {
 
 }
 ```
+
+## Resultados 
+Leitura entrada digital: 1
+Leitura entrada analógica: 765
+
+Leitura entrada digital: 1
+Leitura entrada analógica: 718
+
+Leitura entrada digital: 1
+Leitura entrada analógica: 601
+
+Leitura entrada digital: 0
+Leitura entrada analógica: 509
+
+Leitura entrada digital: 0
+Leitura entrada analógica: 445
+
+Leitura entrada digital: 0
+Leitura entrada analógica: 378
