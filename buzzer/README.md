@@ -12,6 +12,8 @@ Observe abaixo que o pino de acionamento é mantido em nível alto após a oscil
 
 ![Forma de onda gerado pelo código buzzer.ino](./wave.png)
 
+## Vídeo do funcionamento 
+- [Buzzer Passivo](https://youtu.be/uVtgTHC6Szc)
 
 ## Referências
 
