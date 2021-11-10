@@ -1,4 +1,4 @@
-# Sensor de Gás e Fumaça
+# Sensor de gás e fumaça
 
 O sensor MQ-2 possui duas saídas: uma analógica (A0) e outra digital (D0). A função _analogRead_ pode ser utilizada para ler o valor inteiro proporcional ao gás detectado pelo sensor quanto o pino digital pode ser lido pela função _digitalRead_. O valor de gás detectado pelo sensor para a saída digital pode ser ajustado pelo _trimpot_ azul no sensor. Nesse exemplo, ambos as saídas do sensor são exibidas no no Monitor Serial. Assim que o sensor detectar a presença de um gás inflamável ou fumaça, a entrada digital vai ficar com o valor zero e os valores da entrada analógica começam a subir.
 
