@@ -4,7 +4,7 @@ O micro servo possui um motor capaz de direcionar ele para um ângulo específic
 
 ## Montagem do circuito
 
-<img src = "servo.png" alt = "Circuito servo" width = 400 />          
+<img src = "servo.png" alt = "Circuito servo" width = 500 />          
 
 ## Código
 
