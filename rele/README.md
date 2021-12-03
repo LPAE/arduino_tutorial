@@ -1,6 +1,6 @@
 # Módulo Relé 1 Canal 5V
 
-O módulo relé vai funcionar como um controlador para circuitos externos com correntes maiores do que o Arduino é capaz de fornecer, porém no nosso exemplo vamos apenas acender um LED para demostrar sua funcionalidade.
+O módulo relé vai funcionar como um controlador para circuitos externos com correntes maiores do que o Arduino é capaz de fornecer, porém no nosso exemplo vamos apenas acender um LED para mostrar sua funcionalidade.
 
 ## Montagem do Circuito
 
