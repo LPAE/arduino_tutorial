@@ -8,21 +8,15 @@ O sensor de umidade de solo vai detectar e nos informar as variações em que a 
 
 ## Código
 ```C
-// Define a entrada digital com o valor "53"
-#define ENTRADA_DIGITAL 53
 // Define a entrada analogica com o valor "1"
 #define ENTRADA_ANALOGICA A1
 
-// Recebe a leitura feita no pino digital
-bool dRec;
 // Recebe a leitura feita no pino analógico
 int aRec;
 
 // Função setup é executada apenas uma vez
 void setup()
 {
-  // Configura a entrada digital como entrada
-  pinMode (ENTRADA_DIGITAL, INPUT);
   // Inicia a comunicação serial a 9600 bits por segundo
   Serial.begin(9600);
 }
@@ -47,12 +41,9 @@ void tarefa_1() {
   if (tempo_atual - tempo_tarefa_1 > periodo_tarefa_1) {
 
     // Faz a leitura do sensor
-    dRec= digitalRead(ENTRADA_DIGITAL);
     aRec = analogRead(ENTRADA_ANALOGICA);
 
     // Envia para o computador (serial) os dados
-    Serial.print("Leitura entrada digital: ");
-    Serial.println(dRec);
     Serial.print("Leitura entrada analógica: ");
     Serial.println(aRec);
     Serial.println();
@@ -62,20 +53,14 @@ void tarefa_1() {
 ```
 
 ## Resultados 
-Leitura entrada digital: 1
 Leitura entrada analógica: 765
 
-Leitura entrada digital: 1
 Leitura entrada analógica: 718
 
-Leitura entrada digital: 1
 Leitura entrada analógica: 601
 
-Leitura entrada digital: 0
 Leitura entrada analógica: 509
 
-Leitura entrada digital: 0
 Leitura entrada analógica: 445
 
-Leitura entrada digital: 0
 Leitura entrada analógica: 378
