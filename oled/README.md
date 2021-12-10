@@ -1,7 +1,7 @@
 # Display Oled
 
 ## Montagem do circuito
-<img src = "led.png" alt = "Circuito LED" width = 500 />          
+<img src = "oled.png" alt = "Circuito Oled" width = 500 />          
 
 ## Código
 
