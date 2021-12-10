@@ -18,14 +18,14 @@ void draw()
   // Comandos graficos para o display devem ser colocados aqui
   // Seleciona a fonte de texto
   u8g.setFont(u8g_font_8x13B);
-  //Linha superior - temperatura
+  // Linha superior - temperatura
   u8g.drawStr( 5, 15, "23");
   u8g.drawCircle(28, 8, 3);
   u8g.drawStr( 34, 15, "C");
   // Hora
   u8g.setFont(u8g_font_fub30);
   u8g.drawStr( 10, 57, "09:35");
-  //Texto - AM
+  // Texto - AM
   u8g.setFont(u8g_font_5x7);
   u8g.drawStr( 115, 33, "AM");
   // Moldura relogio
