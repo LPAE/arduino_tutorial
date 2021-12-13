@@ -1,6 +1,6 @@
 # Micro Servo SG92R 9g TowerPro
 
-O micro servo possui um motor capaz de direcionar ele para um ângulo específico. O servo que vamos utilizar tem o seu ângulo de rotação máxima de 180°, e pode ser controlado de forma muito precisa com o Arduino.
+O micro servo possui um motor e um circuito eletrônico capaz de direcionar o eixo para um ângulo específico. O servo utilizado tem o seu ângulo de rotação máxima de 180°.
 
 ## Montagem do circuito
 

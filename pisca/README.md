@@ -1,10 +1,10 @@
 # LED
 
-Para entender o funcionamento do Arduino podemos começar com um simples pisca LED utilizando funções básicas como PinMode e DigitalWrite. A função do PinMode vai ditar o comportamento do pino, se ele é saída ou entrada. Já o digitalWrite escreve nível alto (High) ou baixo (LOW) em um pino, consequentemente ligando e desligando o LED conectado nesse pino.
+Para entender o funcionamento do Arduino, pode-se começar com um simples pisca LED utilizando funções básicas como PinMode e DigitalWrite. A função do PinMode vai ditar o comportamento do pino, se ele é saída ou entrada. Já o digitalWrite escreve nível alto (High) ou baixo (LOW) em um pino, consequentemente ligando e desligando o LED conectado nesse pino.
 
 ## Montagem do circuito
 
-Para utilizar o LED no Arduino utilizaremos resistores para que a corrente seja reguladas e os componentes não sofram danos. O resistor utilizado nesse exemplo é de 330 ohms, podendo ser admitidos outros valores e LEDs diferentes.
+Para utilizar o LED no Arduino utiliza-se resistores para que a corrente seja reguladas e os componentes não sofram danos. O resistor utilizado nesse exemplo é de 330 ohms, podendo ser admitidos outros valores e LEDs diferentes.
 
 <img src = "led.png" alt = "Circuito LED" width = 500 />          
 

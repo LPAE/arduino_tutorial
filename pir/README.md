@@ -1,6 +1,6 @@
 # Sensor de presença PIR
 
-Para usar o sensor de presença PIR, usaremos o digitalRead que vai receber um valor High ou Low, tendo conexão com uma porta digital, assim que essa porta digital perceber algum movimento vai informar para o Arduino exibindo no monitor serial, dando um sinal de HIGH. Caso não detecte nada, enviará um sinal de LOW.
+No sensor presença PIR, utliza-se a função digitalRead comparando seu retorno com valores High (nível alto) ou Low (nível baixo). Assim que houver detecção de movimento, o sensor mudará o estado da porta digital e o Arduino exibirá o valor no monitor serial.
 
 ## Montagem do circuito
 
@@ -35,11 +35,9 @@ void loop()
 }
 ```
 
-## Vídeo do funcionamento 
+## Vídeo do funcionamento
 - [Sensor de presença PIR](https://youtu.be/BA93fHSoEoE)
 
 ## Referências
 
 - [Datasheet do sensor](https://siccciber.com.br/wp-content/uploads/2020/06/FTC-PIR.pdf)
-
-

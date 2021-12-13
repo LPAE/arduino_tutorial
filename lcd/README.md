@@ -1,6 +1,6 @@
-# Display LCD 16×2 I2C 
+# Display LCD 16×2 I2C
 
-O nosso display LCD possui o módulo I2c que facilita na hora de fazer as conexões nas portas do arduino, mesmo assim precisamos ter atenção na hora de conectar ele, pois em alguns arduinos não vem escrito na placa qual é a entrada SDA e SCL.  Para utilizá-lo, vamos precisar de uma biblioteca específica. 
+O display LCD possui um módulo I2C que reduz o número de conexões pois utiliza-se comunicação serial ao invés de paralela. Certifique-se da conexão utilizando os pinos específicos SDA e SCL.  É necessária também a biblioteca *LiquidCrystal_I2C*.
 
 ## Montagem do circuito
 
