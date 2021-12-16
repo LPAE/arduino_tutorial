@@ -46,3 +46,6 @@ void loop()
   }
 }
 ```
+
+## Vídeo do funcionamento 
+- [Micro Servo](https://youtu.be/1cqJoaoE0Bc)
