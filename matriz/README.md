@@ -28,3 +28,6 @@ void loop() {
   matriz.escribirFraseScroll("Testando", 200); 
 }
 ```
+
+## Vídeo do funcionamento 
+- [Matriz de LED](https://youtu.be/By8FwmsfYa4)
