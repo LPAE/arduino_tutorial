@@ -1,6 +1,10 @@
 # Display Oled
 
-O oled é um emissor de luz orgânica que funciona através de materiais orgânicos feitos de carbono. Para usar ele vamos precisar de uma biblioteca específica. 
+O oled é um emissor de luz orgânica que funciona através de materiais orgânicos feitos de carbono. Para usar ele vamos precisar de uma biblioteca específica: 
+
+- U8glib
+
+<img src = "libsoled.png" alt = "Circuito Oled" width = 500 />   
 
 ## Montagem do circuito
 <img src = "oled.png" alt = "Circuito Oled" width = 500 />          
