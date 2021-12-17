@@ -80,3 +80,7 @@ void loop(void)
   delay(50);
 }
 ```
+
+## Vídeo do funcionamento 
+- [Display Oled](https://youtu.be/jfn06Anqxf4)
+
