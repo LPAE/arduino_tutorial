@@ -2,6 +2,8 @@
 
 O display LCD possui um módulo I2C que reduz o número de conexões pois utiliza-se comunicação serial ao invés de paralela. Certifique-se da conexão utilizando os pinos específicos SDA e SCL.  É necessária também a biblioteca *LiquidCrystal_I2C*.
 
+<img src= "libslcd.png" alt = "Circuito lcd" width = "600" />
+
 ## Montagem do circuito
 
 <img src = "lcd.png" alt = "Circuito lcd" width = 500 />          
