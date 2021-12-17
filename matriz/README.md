@@ -1,5 +1,7 @@
 # Matriz de LED 8×8 com MAX7219
 
+A matriz de LED é um painel formado por LEDS, por conta da complexidade, precisamos utilizar uma biblioteca para funcionar o nosso letreiro.  
+
 ## Montagem do circuito
 
 <img src = "matriz.png" alt = "Circuito mmatriz" width = 500 />
