@@ -2,6 +2,12 @@
 
 O micro servo possui um motor e um circuito eletrônico capaz de direcionar o eixo para um ângulo específico. O servo utilizado tem o seu ângulo de rotação máxima de 180°.
 
+Nesse caso vamos precisar utilizar uma biblioteca:
+
+- Servo
+
+<img src= "libsservo.png" alt = "Circuito servo" width = "700" />
+
 ## Montagem do circuito
 
 <img src = "servo.png" alt = "Circuito servo" width = 500 />          
