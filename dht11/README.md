@@ -7,7 +7,7 @@ No caso do Arduino, utiliza-se duas bibliotecas específicas que simplificam a c
 - Adafruit Unified Sensor
 - DHT sensor library
 
-<img src= "libs.png" alt = "Circuito temperatura" width = "500" />
+<img src= "libs.png" alt = "Circuito temperatura" width = "700" />
 
 ## Montagem do Circuito
 
