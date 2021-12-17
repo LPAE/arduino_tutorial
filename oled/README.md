@@ -4,7 +4,7 @@ O oled é um emissor de luz orgânica que funciona através de materiais orgâni
 
 - U8glib
 
-<img src = "libsoled.png" alt = "Circuito Oled" width = 500 />   
+<img src = "libsoled.png" alt = "Circuito Oled" width = 700 />   
 
 ## Montagem do circuito
 <img src = "oled.png" alt = "Circuito Oled" width = 500 />          
