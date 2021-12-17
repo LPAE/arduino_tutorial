@@ -12,3 +12,4 @@
 - [Para usar matriz de LED](./matriz/)
 - [Para usar módulo relé 1 canal 5V](./rele/)
 - [Para usar micro servo SG92R 9g TowerPro](./servo/)
+- [Para usar sensor de umidade do solo](./solo/)
