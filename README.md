@@ -10,3 +10,4 @@
 - [Para usar display oled](./oled/)
 - [Para usar display LCD](./lcd/)
 - [Para usar matriz de LED](./matriz/)
+- [Para usar Módulo Relé 1 Canal 5V](./rele/)
