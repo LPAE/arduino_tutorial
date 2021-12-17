@@ -33,3 +33,6 @@ void loop()
   delay(2000);
 }
 ```
+
+## Vídeo do funcionamento 
+- [Módulo Relé 1 Canal 5V](https://youtu.be/qVC-S7XtKO4)
