@@ -39,3 +39,7 @@ void loop()
 {
 }
 ```
+
+## Vídeo do funcionamento 
+- [Display LCD](https://youtu.be/uBbCTLTkzt8)
+
