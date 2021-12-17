@@ -8,3 +8,4 @@
 - [Para usar sensor de água](./agua/)
 - [Para usar sensor de umidade e temperatura](dht11)
 - [Para usar display oled](./oled/)
+- [Para usar display LCD](./lcd/)
