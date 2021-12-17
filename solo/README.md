@@ -1,6 +1,6 @@
 # Sensor de Umidade do solo
 
-O sensor de umidade de solo detecta as variações de umidade através da alteração da resistência elétrica. Ele é formado por duas partes, sendo uma delas as pontas que serão colocados diretamente no solo e um circuito com o amplificador operacional. 
+O sensor de umidade do solo detecta as variações de umidade através da alteração da resistência elétrica. Ele é formado por duas partes, sendo uma delas as pontas que serão colocados diretamente no solo e um circuito com o amplificador operacional. 
 
 ## Montagem do Circuito
 
