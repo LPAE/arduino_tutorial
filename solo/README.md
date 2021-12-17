@@ -64,3 +64,6 @@ Leitura entrada analógica: 509
 Leitura entrada analógica: 445
 
 Leitura entrada analógica: 378
+
+## Vídeo do funcionamento 
+- [Sensor de Umidade do solo](https://youtu.be/l7jW0BGIStE)
