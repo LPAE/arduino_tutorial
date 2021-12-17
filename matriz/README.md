@@ -30,4 +30,4 @@ void loop() {
 ```
 
 ## Vídeo do funcionamento 
-- [Matriz de LED](https://youtu.be/By8FwmsfYa4)
+- [Matriz de LED](https://youtu.be/okbFl04yyuc)
