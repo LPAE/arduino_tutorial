@@ -1,6 +1,8 @@
 # Sensor de presença PIR
 
-No sensor presença PIR, utliza-se a função digitalRead comparando seu retorno com valores High (nível alto) ou Low (nível baixo). Assim que houver detecção de movimento, o sensor mudará o estado da porta digital e o Arduino exibirá o valor no monitor serial.
+O PIR é um sensor que capta a radiação infravermelha de um corpo e assim aciona o que for desejado. Ele é um sensor capaz de detectar o movimento de corpos que emitam calor e que estejam em seu campo de alcance. A sensibilidade do alcance e do tempo de duração do sinal podem ser ajustados no próprio sensor.
+
+Com o sensor presença PIR, utliza-se a função ```digitalRead``` comparando seu retorno com valores High (nível alto) ou Low (nível baixo). Assim, quando houver detecção de movimento, o sensor mudará o estado da porta digital e o Arduino exibirá o valor no monitor serial.
 
 ## Montagem do circuito
 
