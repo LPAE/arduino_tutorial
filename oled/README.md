@@ -75,8 +75,8 @@ void setup(void)
 }
 
 // Função loop é para executar repetidamente o código
-void loop(void)
-{
+void tarefa_1() {
+
   u8g.firstPage();
   do
   {
@@ -85,6 +85,12 @@ void loop(void)
   // Aguarda 50 ms
   delay(50);
 }
+
+void loop() {
+
+  tarefa_1();
+  
+  }
 ```
 
 ## Vídeo do funcionamento 
