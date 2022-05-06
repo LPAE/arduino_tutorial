@@ -23,7 +23,7 @@ void setup() /
   Serial.begin(9600);
 }
 
-// Função loop é para executar repetidamente o código
+// Função para executar a tarefa_1
 void tarefa_1()
 {
   // Se houver movimento
@@ -37,6 +37,7 @@ void tarefa_1()
   }
 }
 
+// Função loop é para executar repetidamente o código
 void loop() {
 
   tarefa_1();
