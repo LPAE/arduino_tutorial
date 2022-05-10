@@ -29,7 +29,7 @@ void tarefa_1() {
     aRec = analogRead(ENTRADA_ANALOGICA);
 
     // Envia para o computador (serial) os dados
-    Serial.print("Leitura entrada analógica: ");
+    Serial.print("Leitura entrada analogica: ");
     Serial.println(aRec);
     Serial.println();
 
