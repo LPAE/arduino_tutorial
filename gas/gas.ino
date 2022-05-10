@@ -17,12 +17,6 @@ void setup()
   Serial.begin(9600);
 }
 
-// Função loop é para executar repetidamente o código
-void loop()
-{
-  tarefa_1();
-}
-
 /* Essas variáveis são globais pois é necessário
    manter os valores independente do contexto de
    execução da função tarefa_1 */
@@ -48,4 +42,10 @@ void tarefa_1() {
     Serial.println();
 
   }
+}
+
+// Função loop é para executar repetidamente o código
+void loop()
+{
+  tarefa_1();
 }

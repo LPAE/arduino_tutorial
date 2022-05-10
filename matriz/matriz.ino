@@ -12,9 +12,14 @@ void setup() {
   matriz.rotar(false); 
 }
 
-// Função loop é para executar repetidamente o código
-void loop() {
+
+void tarefa_1() {
   matriz.borrar();
   // Exibe o texto na matriz de led
   matriz.escribirFraseScroll("Testando", 200); 
+}
+
+// Função loop é para executar repetidamente o código
+void loop(){
+  tarefa_1();
 }

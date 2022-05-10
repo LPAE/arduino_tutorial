@@ -16,16 +16,17 @@ void setup()
   SRV.attach(SERVOPIN);
 }
 
-// Função loop é para executar repetidamente o código
-void loop()
-{
-  // 0 graus a 180 graus
-  for (pos = 0; pos <= 180; pos += 1) {
+
+void tarefa_1(){
+    
+    // 0 graus a 180 graus
+    for (pos = 0; pos <= 180; pos += 1) {
     // Troca de posição
     SRV.write(pos);
     // Aguarda 15 ms
     delay(15);
-  }
+    }
+    
   // 180 graus a 0 graus
   for (pos = 180; pos >= 0; pos -= 1) {
     // Troca de posição
@@ -33,4 +34,9 @@ void loop()
     // Aguarda 15 ms
     delay(15);
   }
+}
+
+// Função loop é para executar repetidamente o código
+void loop(){
+  tarefa_1();
 }
