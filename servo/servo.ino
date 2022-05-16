@@ -16,24 +16,29 @@ void setup()
   SRV.attach(SERVOPIN);
 }
 
+/* Essas variáveis são globais pois é necessário
+ * manter os valores independente do contexto de
+ * execução da função tarefa_1 */
+const unsigned long periodo_tarefa_1 = 1000;
+unsigned long tempo_tarefa_1 = millis();
 
 void tarefa_1(){
-    
-    // 0 graus a 180 graus
-    for (pos = 0; pos <= 180; pos += 1) {
-    // Troca de posição
+
+  unsigned long tempo_atual = millis();
+
+  /* Hora de piscar o led caso tenha passado 1000 ms */
+  if(tempo_atual - tempo_tarefa_1 > periodo_tarefa_1) {
+
+    tempo_tarefa_1 = tempo_atual;
+
+    if (pos == 180)
+      pos = 0;
+    else
+      pos = 180;
+
     SRV.write(pos);
-    // Aguarda 15 ms
-    delay(15);
-    }
-    
-  // 180 graus a 0 graus
-  for (pos = 180; pos >= 0; pos -= 1) {
-    // Troca de posição
-    SRV.write(pos);
-    // Aguarda 15 ms
-    delay(15);
   }
+
 }
 
 // Função loop é para executar repetidamente o código
