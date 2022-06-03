@@ -1,6 +1,8 @@
 # Sensor de gás e fumaça
 
-O sensor MQ-2 possui duas saídas: uma analógica (A0) e outra digital (D0). A função _analogRead_ pode ser utilizada para ler o valor inteiro proporcional ao gás detectado pelo sensor quanto o pino digital pode ser lido pela função _digitalRead_. O valor de gás detectado pelo sensor para a saída digital pode ser ajustado pelo _trimpot_ azul no sensor. Nesse exemplo, ambos as saídas do sensor são exibidas no no Monitor Serial. Assim que o sensor detectar a presença de um gás inflamável ou fumaça, a entrada digital vai ficar com o valor zero e os valores da entrada analógica começam a subir.
+O sensor MQ-2 é um sensor que consegue identificar a presença de gases infumáveis ou fumaça em um ambiente. Quando ele detecta esses gases ele envia um sinal, que pode ser tanto analógico como digital, ao microcontrolador conectado.
+
+O sensor MQ-2 possui duas saídas: uma analógica (A0) e outra digital (D0). A função ```_analogRead_``` pode ser utilizada para ler o valor inteiro proporcional ao gás detectado pelo sensor. Quanto ao pino digital, usa-se a função ```_digitalRead_```. O valor de gás detectado pelo sensor para a saída digital pode ser ajustado pelo ```_trimpot_```, o ajuste de sensibilidade azul, na parte de baixo do sensor. Nesse exemplo, ambas as saídas do sensor são exibidas no Monitor Serial. Assim que o sensor detectar a presença de um gás inflamável ou fumaça, a entrada digital vai ficar com o valor zero e os valores da entrada analógica começam a subir.
 
 ## Montagem do Circuito
 
@@ -28,11 +30,6 @@ void setup()
   Serial.begin(9600);
 }
 
-// Função loop é para executar repetidamente o código
-void loop()
-{
-  tarefa_1();
-}
 
 /* Essas variáveis são globais pois é necessário
    manter os valores independente do contexto de
@@ -41,9 +38,8 @@ const unsigned long periodo_tarefa_1 = 1000;
 unsigned long tempo_tarefa_1 = millis();
 
 //Envia os valores interios para o PC
-void tarefa_1() {
-  unsigned long tempo_atual = millis ();
-
+void tarefa_1(unsigned long tempo_atual) {
+  
   //Hora de enviar os dados caso tenha passado 1000 ms
   if (tempo_atual - tempo_tarefa_1 > periodo_tarefa_1) {
 
@@ -59,7 +55,17 @@ void tarefa_1() {
     Serial.println();
 
   }
-}
+
+
+// Função loop é para executar repetidamente o código
+void loop()
+{
+
+unsigned long tempo_atual = millis ();
+
+tarefa_1();
+
+ }
 ```
 
 ## Resultados

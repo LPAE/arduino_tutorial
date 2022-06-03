@@ -1,6 +1,6 @@
 # Usando função loop() com várias tarefas sem bloqueio (delay)
 
-O Arduino Uno não é um microcontrolador muito poderoso e isso está relacionado diretamente ao poder de computacional global. Contudo, a velocidade de execução ainda é bastante alta para lidar com a maioria dos sistemas físicos que se deseja controlar.
+O Arduino Uno não é um microcontrolador muito poderoso e isso está relacionado diretamente ao poder computacional global. Contudo, a velocidade de execução ainda é bastante alta para lidar com a maioria dos sistemas físicos que se deseja controlar.
 
 Lembre-se que o microcontrolador ATmega328p que equipa as placas do Arduino Uno utiliza um clock de 16MHz.
 
@@ -19,7 +19,7 @@ Com o objetivo de executar várias __"tarefas"__ no Arduino, siga as seguintes d
 
 Considere o seguinte hardware:
 
-- 4 LEDs conectados em 4 pinos digitais pins (saídas).
+- 4 LEDs conectados em 4 pinos digitais (saídas).
 - 1 botão conectado a 1 pino digital (entrada).
 - 1 potenciômetro conectado a uma entrada anaĺógica.
 - Cabo USB conectado no computador.
@@ -28,9 +28,9 @@ Considere o seguinte hardware:
 
 Requisitos da aplicação:
 
-- Piscas o LED 1 a cada 1 segundo.
-- Ler um valor entre 0 a 255 do usuário pela porta Serial (USB) e escrever o valor no LED 2.
-- Ligar o LED 3 se o botão é pressionado.
+- Piscar o LED 1 a cada 1 segundo.
+- Ler um valor entre 0 e 255 fornescido pelo usuário pela porta Serial (USB) e escrever o valor no LED 2.
+- Ligar o LED 3 se o botão for pressionado.
 - Ligar o LED 4 se o valor analógico do potenciômetro for maior que 312.
 - Enviar o valor do potenciômetro a cada 2 segundos.  
 

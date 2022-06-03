@@ -1,5 +1,6 @@
 // Define a entrada analógica 0 conectada ao sensor
 #define PINO_SENSOR_AGUA A0
+
 // Define o pino "13" onde o LED está conectado
 #define LED 13
 
@@ -9,7 +10,6 @@ void setup() {
   Serial.begin(9600);
   // Configura o pino do LED como saída
   pinMode (LED, OUTPUT);
-
 }
 
 /* Essas variáveis são globais pois é necessário

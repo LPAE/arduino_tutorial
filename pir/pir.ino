@@ -2,7 +2,7 @@
 #define pinPIR 7
 
 // Função setup é executada apenas uma vez
-void setup() /
+void setup() 
 {
   // Configura o pino como entrada
   pinMode (pinPIR, INPUT);
@@ -11,14 +11,20 @@ void setup() /
 }
 
 // Função loop é para executar repetidamente o código
-void loop()
+void tarefa_1()
 {
   // Se houver movimento
   if (digitalRead(pinPIR) == HIGH) {
     // Enviar para monitor serial
-    Serial.println("Presença detectada");
+    Serial.println("Presenca detectada");
   } else {
     // Se não houver movimento enviar para monitor serial
     Serial.println("-----");
   }
+}
+
+void loop(){
+  
+  tarefa_1();
+  
 }

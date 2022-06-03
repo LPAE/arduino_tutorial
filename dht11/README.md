@@ -1,6 +1,6 @@
 # Sensor de Umidade e Temperatura
 
-O DHT11 é um sensor digital de temperatura e umidade que utiliza um barramento de comunicação serial simples de apenas um fio. É necessáio utilizar um resistor de _pull-up_ no pino de dados (ou utilizar pull-up interno do Arduino).
+O DHT11 é um sensor digital de temperatura e umidade que utiliza um barramento de comunicação serial simples de apenas um fio. É necessáio utilizar um resistor de _pull-up_ no pino de dados (ou utilizar o pull-up interno do Arduino).
 
 No caso do Arduino, utiliza-se duas bibliotecas específicas que simplificam a comunicação do sensor:
 
@@ -37,11 +37,7 @@ void setup() {
   dht.begin();
 }
 
-// Função loop é para executar repetidamente o código
-void loop()
-{
-  tarefa_1();
-}
+
 
 /* Essas variáveis são globais pois é necessário
    manter os valores independente do contexto de
@@ -50,8 +46,7 @@ const unsigned long periodo_tarefa_1 = 2000;
 unsigned long tempo_tarefa_1 = millis();
 
 //Envia os valores interios para o PC
-void tarefa_1() {
-  unsigned long tempo_atual = millis ();
+void tarefa_1(nsigned long tempo_atual) {
 
   //Hora de enviar os dados caso tenha passado 2000 ms
   if (tempo_atual - tempo_tarefa_1 > periodo_tarefa_1) {
@@ -77,6 +72,14 @@ void tarefa_1() {
     Serial.print(f);
     Serial.println(F("°F"));
   }
+}
+
+// Função loop é para executar repetidamente o código
+void loop()
+{
+  unsigned long tempo_atual = millis ();
+
+  tarefa_1();
 }
 ```
 

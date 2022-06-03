@@ -1,6 +1,6 @@
 # Sensor de Água
 
-Esse sensor detecta a presença ou nível de água de forma analógica pela alteração da resistência das trilhas paralelas presentes na superfície da placa de circuito impresso. Conforme o exemplo, assumi-se um valor de analógico lido do sensor maior que 300, o LED irá se acender, assim, indicando a presença de água. O valor da atuação e calibração deve ser ajustado para cada aplicação.
+Esse sensor detecta a presença ou nível de água de forma analógica pela alteração da resistência das trilhas paralelas presentes na superfície da placa de circuito impresso. No exemplo a seguir, caso o valor analógico lido seja maior que 300 o LED irá se acender, assim, indicando a presença de água. O valor da atuação e calibração deve ser ajustado para cada aplicação.
 
 ## Montagem do Circuito
 
@@ -31,7 +31,6 @@ unsigned long tempo_tarefa_1 = millis();
 
 /* Tarefa 1: envia o valor analógico para o PC */
 void tarefa_1() {
-  unsigned long tempo_atual = millis();
 
   int valorSensor;
 
@@ -54,8 +53,10 @@ void tarefa_1() {
 }
 
 /* Função loop() é responsável por escalonar as tarefas.
-   Essa função é executada eternamente enquanto o Arduino estiver  energizado */
+   Essa função é executada eternamente enquanto o Arduino estiver energizado */
 void loop() {
+
+  unsigned long tempo_atual = millis();
 
   tarefa_1();
 

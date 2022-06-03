@@ -10,23 +10,29 @@ void draw()
   // Comandos graficos para o display devem ser colocados aqui
   // Seleciona a fonte de texto
   u8g.setFont(u8g_font_8x13B);
+  
   // Linha superior - temperatura
   u8g.drawStr( 5, 15, "23");
   u8g.drawCircle(28, 8, 3);
   u8g.drawStr( 34, 15, "C");
+  
   // Hora
   u8g.setFont(u8g_font_fub30);
   u8g.drawStr( 10, 57, "09:35");
+  
   // Texto - AM
   u8g.setFont(u8g_font_5x7);
   u8g.drawStr( 115, 33, "AM");
+  
   // Moldura relogio
   u8g.drawRFrame(0, 18, 128, 46, 4);
+  
   // Desenho bateria
   u8g.drawRFrame(105, 3, 20, 12 , 0);
   u8g.drawBox(125, 6, 2, 6);
   u8g.drawBox(107, 5, 4, 8);
   u8g.drawBox(114, 5, 4, 8);
+  
   // Desenho linhas sinal
   u8g.drawVLine(99, 0, 15);
   u8g.drawVLine(98, 0, 15);
@@ -60,14 +66,29 @@ void setup(void)
   }
 }
 
+/* Essas variáveis são globais pois é necessário
+ * manter os valores independente do contexto de
+ * execução da função tarefa_1 */
+const unsigned long periodo_tarefa_1 = 1000;
+unsigned long tempo_tarefa_1 = millis();
+
 // Função loop é para executar repetidamente o código
-void loop(void)
+void tarefa_1()
 {
+  unsigned long tempo_atual = millis();
+  
+  if(tempo_atual - tempo_tarefa_1 > periodo_tarefa_1) {
+    tempo_tarefa_1 = tempo_atual;
+  
   u8g.firstPage();
   do
   {
     draw();
   } while ( u8g.nextPage() );
-  // Aguarda 50 ms
-  delay(50);
+  }
+}
+
+void loop() {
+  
+  tarefa_1();
 }
