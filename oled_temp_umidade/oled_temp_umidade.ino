@@ -80,6 +80,9 @@ void draw()
   // Seleciona a fonte de texto
   u8g.setFont(u8g_font_8x13B);
 
+  String stringOne = String(h, 1);
+  stringOne.toCharArray(string, 64);    
+  
   /*Linha superior - umidade*/
   u8g.drawStr( 5, 15, string);
   u8g.drawStr( 40, 15, "% de umid.");
